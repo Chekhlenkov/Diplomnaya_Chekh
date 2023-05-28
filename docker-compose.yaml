@@ -10,7 +10,7 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_NAME}
     volumes:
-      - Diplomnaya_Chekh_data:/var/lib/postgresql/data
+      - diploma_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     healthcheck:
@@ -20,4 +20,4 @@ services:
       retries: 10
 
 volumes:
-  Diplomnaya_Chekh_data:
+  diploma_data:
